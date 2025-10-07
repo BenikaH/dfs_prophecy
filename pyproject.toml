@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dfs-prophecy"
+version = "0.1.0"
+description = "End-to-end DFS pipeline for projections, lineup generation, simulation, and portfolio optimization."
+authors = [{name = "DFS Prophecy"}]
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.24",
+    "pandas>=2.0",
+    "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+ray = ["ray>=2.7"]
+ml = ["lightgbm>=3.3", "xgboost>=1.7"]
+
+[tool.setuptools.packages.find]
+include = ["dfs_prophecy*"]

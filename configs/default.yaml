@@ -1,0 +1,28 @@
+seed: 42
+output_dir: runs
+projection:
+  sport: nfl
+  site: dk
+  ceiling_quantile: 0.9
+  floor_quantile: 0.15
+  wr_spike_multiplier: 1.4
+lineup:
+  num_lineups: 25
+  salary_cap: 50000
+  max_dup_signature: 3
+  max_exposure_per_player: 0.45
+  force_primary_stack: true
+  force_bring_back: true
+simulation:
+  num_trials: 2000
+  entry_fee: 20
+  contest_size: 50000
+  rake: 0.15
+portfolio:
+  bankroll: 500
+  cvar_alpha: 0.05
+  min_cvar: 5
+  max_exposure_per_lineup: 20
+  entry_fee: 20
+  kelly_multiplier: 0.8
+  max_total_entries: 150
